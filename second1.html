@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+.icon-bar {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 640px; 
+}
+.column2 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 640px; 
+}
+.column3 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 640px; 
+}
+.column4 {
+    float: left;
+    width: 35%;
+    padding: 10px;
+    height: 640px;
+}
+.column5 {
+    float: left;
+    width:18%;
+    padding: 10px;
+   height: 640px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.icon-bar {
+float:left;
+    width: 90px;
+    background-color: black;
+}
+a {
+color:#8D8989;
+}
+h5 {
+color:white;
+float:right;
+margin: 0 0 0 15px;
+}
+h3 {
+float:right;
+margin: 0 0 0 15px;
+}
+small {
+color:silver;
+float:right;
+margin: 0 0 0 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #151010;
+}
+
+li a {
+    display: block;
+    color: #8D8989;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #271E1E;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+	color:#8D8989;
+	 background-color: #8D8989;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    float: left;
+    width: 80%;
+    background: black;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: black;
+    color: gray;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+img.myimage {
+    border-radius: 50%;
+	margin:10px;
+}
+img.myimage1 {
+border-radius: 10%;
+}
+p{
+color:white;
+}
+.mydiv {background: #181414; color:white; width:320px; height: 80px; float:left}
+.mydiv:hover {
+    background-color: #555;
+}
+.myimage {float:left; width:50; height:50px; }
+strong{
+color:black;
+margin: 0 0 0 20px;
+float"right;
+}
+
+
+.incoming_msg_img {
+  display: inline-block;
+  width:16%;
+}
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  width: 300px;
+ }
+ .received_withd_msg p {
+  background: white ;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0;
+}
+ .sent_msg p {
+  background: green;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0; color:#fff;
+  padding: 5px 10px 5px 12px;
+  width:300px;
+}
+
+#frame .content .messages ul li {
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin: 5px 5px 5px 5px;
+  width:430px;
+  font-size: 0.9em;
+}
+#frame .content .messages ul li.sent img {
+  margin: 16px 8px 0 0;
+  width:35px;
+}
+#frame .content .messages ul li.sent p {
+  background: silver;
+  color: black;
+    width:350px;
+}
+#frame .content .messages ul li.replies img {
+  float: right;
+  width:35px;
+  clear:both;
+}
+#frame .content .messages ul li.replies p {
+  background: green;
+    width:350px;
+   clear:both;
+}
+#frame .content .messages ul li img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 0 0 20px;
+  float: left;
+  clear:both;
+}
+#frame .content .messages ul li p {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 120;
+  clear:both;
+}
+.c {
+float:left;
+}
+.c1 {
+float:right;
+clear:both;
+}
+input[type=login] {
+    width: 50%;
+    background-color: white;
+    color: silver;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border-radius: 1px;
+	border-color:silver;
+}
+input[type=text] {
+    width: 90%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div class="row">
+ <div class="icon-bar">
+ <center>
+  <a class="active" href="#"><img src="menu.jpg" alt="Smiley face" height="50px" width="50px"</i></a> 
+  <a class="active" href="#"><img src="whatsapp.jpg" alt="Smiley face" height="50px" width="50px"</i></a> 
+  <a class="active" href="#"><img src="mail.jpg" alt="Smiley face" height="50px" width="50px"</i></a> 
+<a class="active" href="#"><img src="skype.jpg" alt="Smiley face" height="50px" width="50px"</i></a> 
+<a class="active" href="#"><img src="twitter.jpg" alt="Smiley face" height="50px" width="50px"</i></a> 
+<a class="active" href="#"><img src="hangout.jpg" alt="Smiley face" height="50px" width="50px"</i></a> </center>
+</div>
+  <div class="column2" style="background-color:#151010">
+  <h5><img src="man.jpg" alt="Smiley face" height="50px" width="50px"  ></h5>
+  <h4> <a>Inbox</a></h4> <hr>
+    <ul>
+  <li><a class="active" href="#home">All<h5>50</h5></a></li>
+  <li><a href="#news">Message<h5>20</h5></a></li>
+  <li><a href="#contact">unread<h5>10</h5></a></li>
+  <li><a href="#about">important<h5>5</h5></a></li><hr>
+   <li><a href="#about">Teams<h5>25</h5></a></li>
+    <li><a href="#about">groups<h5>8</h5></a></li>
+	 <li><a href="#about">channels<h5>6</h5></a></li>
+	  <li><a href="#about">locations<h5>10</h5></a></li>
+	   <li><a href="#about">Media<h5>50</h5></a></li><hr>
+	    <li><a href="#about">Help<h5>50</h5></a></li>
+		 <li><a href="#about">Settings<h5>50</h5></a></li>
+		 
+		
+</ul>
+  </div>
+  <div class="column3" style="background-color:#271E1E">
+     <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+	 <button type="submit"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="Search.." name="search2">
+ <br></form>
+  <br><br>
+  <div class="mydiv">
+ <img class="myimage" src="black.jpg"/><br>
+&nbsp &nbsp sarulatha<br>
+ &nbsp &nbsp <a>hiii d. how are you?</a><h5>. . .</h5><br><small>30 min</small>
+    </div>
+	 <div class="mydiv">
+ <img class="myimage" src="black.jpg"/><br>
+&nbsp &nbsp supraja<br>
+ &nbsp &nbsp <a>hiii d. how are you?</a><h5>. . .</h5><br><small>20 min</small>
+    </div>
+	 <div class="mydiv">
+ <img class="myimage" src="black.jpg"/><br>
+&nbsp &nbsp ragavi<br>
+ &nbsp &nbsp <a>hiii d. how are you?</a><h5>. . .</h5><br><small>1 hr</small>
+    </div>
+	 <div class="mydiv">
+ <img class="myimage" src="black.jpg"/><br>
+&nbsp &nbsp priya<br>
+ &nbsp &nbsp <a>hiii d. how are you?</a><h5>. . .</h5><br><small>45 min</small>
+    </div>
+	 <div class="mydiv">
+ <img class="myimage" src="black.jpg"/><br>
+&nbsp &nbsp lotus<br>
+ &nbsp &nbsp <a>hiii d. how are you?</a><h5>. . .</h5><br><small>6 min</small>
+    </div>
+	 <div class="mydiv">
+ <img class="myimage" src="black.jpg"/><br>
+&nbsp &nbsp akalya<br>
+ &nbsp &nbsp <a>hiii d. how are you?</a><h5>. . .</h5><br><small>2 hr</small>
+    </div>
+
+
+  </div>
+  <div class="column4" style="background-color:#F0ECEC">
+   <br><b>Supraja Sekar<b><a>  is typing....<a><h5><i class="fa fa-trash-o" style="font-size:20px;color:silver"></i><h5><i class="fa fa-star-o" style="font-size:20px;color:silver"></i></h5><h5><i class="fa fa-video-camera" style="font-size:20px;color:silver"></i></h5>
+  <br><br>
+  <hr>
+ <div id="frame">
+	<div id="sidepanel">
+	</div>
+	<div class="content">
+		<div class="contact-profile">
+		</div>
+		<div class="messages">
+			<ul>
+				<li class="sent">
+					<img src="black.jpg" alt="" />
+					<p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+				</li>
+				<small class="c">11.30 A.m</small>
+				<li class="replies">
+					<img src="black.jpg" alt="" />
+					<p>When you're backed against the wall, break the god damn thing down.</p>
+				</li>
+				
+				<li class="sent">
+					<img src="black.jpg" alt="" />
+					<p>Oh yeah, did Michael Jordan tell you that?</p>
+				</li>
+				<small class="c">11.30 A.m</small>
+				<li class="replies">
+					<img src="black.jpg" alt="" />
+					<p>No, I told him that.I supposed to believe that you</p>
+				</li>
+				<li class="sent">
+					<img src="black.jpg" alt="" />
+					<p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+					
+				</li>
+				<small class="c">11.30 A.m</small>
+				<li class="sent">
+				<input type="text" placeholder="typing a message...." name="search2">	
+<i class="fa fa-send-o" style="font-size:30px"></i>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+  </div>
+  <div class="column5" style="background-color:white;">
+ <center><input type="login" value="      John  ..."/></center>
+ <hr>
+  <a class="active" href="#"><img src="mail1.jpg" alt="Smiley face" height="50px" width="50px"</i></a> <h3>. . .</h3>
+ <center><img class="myimage1" src="black.jpg" width="100px" height="100px "/></center>
+ <center><h2><a>Sarulatha<a></h2>
+ <pre>     chennai</pre></center>
+ <hr>
+ <a>Nick Name &nbsp&nbsp&nbsp&nbsp: </a><strong>saru</strong><br>
+ <a>Telephone &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: </a><strong>9988334455</strong><br>
+ <a>Date of Birth &nbsp:</a><strong>24/06/1998</strong><br>
+ <a>Gender(M/F) &nbsp: </a><strong>female</strong><br>
+ <a>Language &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: </a><strong>english</strong>
+  </div>
+</div>
+
+</body>
+</html>
